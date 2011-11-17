@@ -32,8 +32,8 @@ PRODUCT_COPY_FILES += \
     device/htc/pyramid/init:root/init \
     device/htc/pyramid/init.rc:root/init.rc \
     device/htc/pyramid/ueventd.rc:root/ueventd.rc \
-    device/htc/pyraid/init.pyramid.rc:root/init.pyramid.rc \
-    device/htc/shooter/ueventd.pyramid.rc:root/ueventd.pyramid.rc
+    device/htc/pyramid/init.pyramid.rc:root/init.pyramid.rc \
+    device/htc/pyramid/ueventd.pyramid.rc:root/ueventd.pyramid.rc
 
 ## (2) Also get non-open-source GSM-specific aspects if available
 $(call inherit-product-if-exists, vendor/htc/pyramid/pyramid-vendor.mk)
@@ -161,7 +161,7 @@ $(call inherit-product, device/htc/common/common.mk)
 
 $(call inherit-product, build/target/product/full_base.mk)
 
-PRODUCT_NAME := HTC Pyramid
+PRODUCT_NAME := full_pyramid
 PRODUCT_DEVICE := pyramid
 PRODUCT_MODEL := HTC Sensation
-PRODUCT_MANUFACTURER := HTC
+PRODUCT_BRAND := HTC
